@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enrollment Form</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      background-color: #003d3d;
+    }
+  </style>
+</head>
+<body>
+    <div class="enrol-preloader">
+      <p>Loading...</p>
+    </div>
+    <div class="enrol-container" id="enrol-house">
+      <header>
+        <div class="landing-page section active">
+          <img src="./hamburger.png" alt="" class="hamurger" id="hamburger" onclick="toggleUL()" draggable="false">
+          <nav>
+    
+            <a href="..." class="logo">
+                <div class="empty-box"></div>
+                <div class="logo-word"><span class="s">S</span><span class="t">T</span><span class="e">E</span>P</div>
+                
+            </a>
+            <div  class="screen-display">
+              <div class="display-words">Admission is on going</div>
+            </div>
+              <div class="list-items">
+                <ul class="lists">
+             
+                  <li class="enrol-home-link">
+                    <a href="./index.html" data-after="Home" class="active">Home</a>
+                  </li>  
+                  <li class="enrol-home-icon">
+                    <a href="./index.html" data-after="Home" class="active"><img src="./images/home.png" alt=""></a>
+                  </li>  
+                
+                                
+                </ul>
+            </div>
+        
+          </nav>
+      </header>
+      <main>
+        <div class="enrol-wrap">
+          <section class="enrol-wrap-header">
+            <div class="before-form-info">
+              <small>Apply Online</small>
+              <div>Please fill out the following application to apply.</div><br>
+            </div>
+          </section>
+          <section class="form-wrap">
+
+            <form>
+              <div class="detail-wrap">
+
+                <div class="form-upperpart-infos">
+                  <div class="logo" id="enrol-logo">
+                    <div class="empty-box"></div>
+                    <div class="logo-word"><span class="s">S</span><span class="t">T</span><span class="e">E</span>P</div>
+                    
+                  </div>
+                  <div class="form-upperpart-info">
+                    <div class="upperpart-info">
+                      <h1>SUCCESS TRAIN COLLEGE,<br><span>EJIGBO</span></h1>
+                      <small> <address>5/11 Your Street address,Estate,Ejigbo , lagos.</address>Email:successtraincollege@gmail.com <br>https://yourwebsitelinkhere <br>0001112223 00022233344</small>
+                      <h2>STUDENT ADMISSION FORM</h2>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="detail-wrap-infos" style="color: #333; text-align: start;">
+
+                  <div class="passport-box">
+                    
+                      <div id="img-drop-area">
+                        <p>Drag and drop your image here</p><br>
+                        <input type="file" name="" id="imgFile" accept="image/*" class="first-upload-img upload-img">
+                      </div>
+                  </div>
+
+                  <div class="student-details-box">
+                    <h1>Student Details:</h1>
+                    <div class="full-name">
+                      <div class="name-labels">First/Middle/Surname name(s): <span class="star">*</span></div>
+                      <small id="first-intruc">In capital letters</small>
+                      <div class="name-inputs flex-inputs">
+                        <div class="enrol-name student-first-name " >
+                          <input type="text" placeholder="First" class="input-short-width"><br>
+                          <span class="sch-form-error first-name-error">first error</span>
+                        </div>
+                        <div class="enrol-name student-middle-name  "  >
+                          <input type="text" placeholder="Middle" class="input-short-width"><br>
+                          <span class="sch-form-error first-name-error">middle error</span>
+                        </div>
+                        <div class="enrol-name student-Last-name "  >
+                          <input type="text" placeholder="Last" class="input-short-width"><br>
+                          <span class="sch-form-error first-name-error">last error</span>
+                        </div>
+                        
+                      </div>
+                    </div>
+                    <div class="state-of-origin">
+                      <div class="origin-label">
+                        State of Origin/Local Govt.:<span class="star">*</span>
+                      </div>
+                      <input type="text" name="" id="" class="input-long-width"><br>
+                      <span class="local-gov-error">local gov error</span>
+                    </div>
+                    <div class="gender">
+                      <div class="gender-label">
+                        Gender:<span class="star">*</span>
+                      </div>
+                      <div class="gender-inputs">
+
+                        <div class="female-box gender-box input-short-width">
+                          <input type="checkbox" name="gender-female" id="gender-female">
+                          <label for="gender-female" >Female</label>
+                        </div>
+                        <div class="male-box gender-box input-short-width">
+                          <input type="checkbox" name="gender-male" id="gender-female">
+                          <label for="gender-female" >Male</label>
+                        </div>
+
+                      </div>
+                      <span class="sch-form-error gender-error">gender error</span>
+                      
+                    </div>
+                    <div class="special-student">
+                      <label for="sp-student">Does the applicant require special need facility?</label><br>
+                      <input type="text" id="sp-student" class="input-long-width"><br>
+                      <span class="sch-form-error sp-error">special student error</span>
+                      
+                    </div>                    
+                    <div class="reside-with">
+
+                      <div class="reside-with-label">
+                        Currently resides with:<span class="star">*</span>
+                      </div>
+                      <div class="reside-with-inputs flex-inputs ">
+
+                        <div class="both-parent-box input-short-width reside-box ">
+                          <input type="checkbox" name="" id="both-parent">
+                          <label for="both-parent">Both Parents</label>
+                        </div>
+                        <div class="mother-box input-short-width reside-box ">
+                          <input type="checkbox" name="" id="std-mother">
+                          <label for="std-mother">Mother</label>
+                        </div>
+                        <div class="father-box input-short-width reside-box">
+                          <input type="checkbox" name="" id="std-father">
+                          <label for="std-father">Father</label>
+                        </div>
+                        <div class="guardian-box input-short-width reside-box">
+                          <input type="checkbox" name="" id="guardian">
+                          <label for="guardian">Guardian</label>
+                        </div>
+                      </div>
+                      <span class="sch-form-error reside-error">reside error</span>
+                      
+                    </div>
+                  </div>
+
+                  <div class="entry-detail">
+                    <h1>Entry Detail:</h1>
+                    
+                    <div class="proposed-class">
+                      <label for="proposed-class">Proposed class of entry:<span class="star">*</span></label><br>
+                      <input type="text" name="" id="proposed-class" class="input-long-width"><br>
+                      <span class="sch-form-error reside-error">proposed-class   error</span>
+
+                    </div>
+                    <div class="session">
+                      <label for="term">Session/Term:<span class="star">*</span></label><br>
+                      <input type="text" name="" id="term" class="input-long-width"><br>
+                      <span class="sch-form-error reside-error">proposed-class   error</span>
+
+                    </div>
+                    <div class="present-class">
+                      <label for="proposed-class">Proposed class of entry:<span class="star">*</span></label><br>
+                      <input type="text" name="" id="presentClass" class="input-long-width"><br>
+                      <span class="sch-form-error reside-error">present-class   error</span>
+
+                    </div>
+
+                  </div>
+                  <div class="parent-detail">
+
+                    <h1>Parent's Detail:</h1>
+                    <div class="select-guarantor">
+                      <div class="reside-with-label">
+                        Parent/Guardian Detail:<span class="star">*</span>
+                      </div>
+                      <div class="parent-detail-inputs flex-inputs ">
+
+                        <div class="father-box input-short-width checkbox-box">
+                          <input type="checkbox" name="" id="guardian-isFather">
+                          <label for="guardian-isFather">Father</label>
+                        </div> 
+                        <div class="mother-box input-short-width checkbox-box">
+                          <input type="checkbox" name="" id="guardian-isMother">
+                          <label for="guardian-isMother">Mother</label>
+                        </div>
+                       
+                        <div class="guardian-box input-short-width checkbox-box">
+                          <input type="checkbox" name="" id="guardian-isGuardian">
+                          <label for="guardian-isGuardian">Guardian</label>
+                        </div>
+                      </div>
+                      <span class="sch-form-error parent-detail-error">parent details error</span>
+                    </div>
+
+                    <div class="parent-detail-input-wrap">
+
+                      <div class="parent-details-labels">
+                        
+                        <div class="first-last-name">
+                          <h4>
+                          First/Last name<span class="star">*</span>
+
+                          </h4>
+                        </div>
+
+                        <div class="name-titles">
+                          Mr/Mrs/Ms/Miss/Chief/Dr/Other <span><input type="text" class="title-input"></span>
+                        </div>
+                        <div class="name-title-input">
+                         
+                          <span class="sch-form-error first-last-name-error">first/last error</span>
+
+                        </div>
+
+                      </div>
+                      <div class="guarantor-inputs flex-inputs">
+                        <div class="guarantor-fName f-lName">
+                          <input type="text" placeholder="First" class="input-medium-width"><br>
+                          <span class="sch-form-error parent-detail-error">guarantor-fName error</span>
+
+                        </div>
+                        <div class="guarantor-lName f-lName">
+                          <input type="text" placeholder="Last" class="input-medium-width"><br>
+                          <span class="sch-form-error parent-detail-error">guarantor-lName error</span>
+
+                        </div>
+                      </div>
+                    </div>
+                    <div class="guarantor-relationship">
+                      <label for="relationship">Relationship with student:<span class="star">*</span></label><br>
+                      <input type="text" id="guarantor-relationship" class="input-long-width"><br>
+                      <span class="sch-form-error relationship-error">relationship error</span>
+                      
+                    </div>
+                    <div class="contact-address">
+                      <h3>Contact Address</h3>
+                      <div class="contact-inputs">
+                        <div class="street-address-box">
+                          <input type="text" name="" id="" placeholder="Street Address " class="input-long-width"><br>
+                          <span class="sch-form-error address-error">address error</span>
+
+                        </div>
+                    <div class="city-state-box">
+                          <div class="city-box">
+                            <input type="text" name="" id="" placeholder="City" class="input-medium-width"><br>
+                            <span class="sch-form-error address-error">city error</span>
+
+                          </div>
+                          <div class="state-box">
+                            <input type="text" name="" id="" placeholder="state" class="input-medium-width"><br>
+                            <span class="sch-form-error address-error">state error</span>
+
+                          </div>
+                    </div>
+                    <div class="postal-country-box">
+                      <div class="postal-code-box">
+                        <input type="text" name="" id="" placeholder="Postal/Zip Code" class="input-medium-width"><br>
+                        <span class="sch-form-error address-error">postal error</span>
+
+                      </div>
+                      <div class="country-box">
+                        <input type="text" name="" id="country" placeholder="Country" class="input-medium-width">
+                        
+                        <br>
+                        <span class="sch-form-error address-error">country error</span>
+
+                      </div>
+                    </div> 
+                        <div class="phone-box">
+                          <label for="text">Mobile number<span class="star">*</span></label><br>
+
+                          <input type="text" name="" id="phone" placeholder="phone number" class="input-long-width">
+                          <br>
+                          <span class="sch-form-error phone-error">phone error</span>
+
+                        </div>
+                        <div class="occupation-box">
+                          <label for="occupation">Occupation<span class="star">*</span></label><br>
+                          <input type="text" name="" id="occupation"placeholder="" class="input-long-width">
+                          <br>
+                          <span class="sch-form-error phone-error">occupation error</span>
+
+                        </div>
+                        <div class="occupation-box">
+                          <label for="email">Email address<span class="star">*</span></label><br>
+                          <input type="email" name="" id="email"placeholder="" class="input-long-width">
+                          <br>
+                          <span class="sch-form-error email-error">email error</span>
+
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="present-sch-details">
+                    <h1>Present School Detail:</h1>
+                    
+                    <div class="school-name-box">
+                      <label for="proposed-class">Name of School:<span class="star">*</span></label><br>
+                      <input type="text" name="" id="proposed-class" class="input-long-width"><br>
+                      <span class="sch-form-error reside-error">sch name   error</span>
+
+                    </div>
+                    <div class="school-address-box">
+                      <label for="school-address">School Address:<span class="star">*</span></label><br>
+                      <input type="text" name="" id="school-address" placeholder="street address" class="input-long-width"><br>
+                      <span class="sch-form-error school-error">sch address error</span>
+
+                    </div>
+                    <div class="city-state-box">
+                      <div class="city-box">
+                        <input type="text" name="" id="" placeholder="City" class="input-medium-width"><br>
+                        <span class="sch-form-error address-error">city error</span>
+
+                      </div>
+                      <div class="state-box">
+                        <input type="text" name="" id="" placeholder="state" class="input-medium-width"><br>
+                        <span class="sch-form-error address-error">state error</span>
+
+                      </div>
+                </div>
+                <div class="postal-country-box">
+                  <div class="postal-code-box">
+                    <input type="text" name="" id="" placeholder="Postal/Zip Code" class="input-medium-width"><br>
+                    <span class="sch-form-error address-error">postal error</span>
+
+                  </div>
+                  <div class="country-box">
+                    <input type="text" name="" id="country" placeholder="Country" class="input-medium-width">
+                    
+                    <br>
+                    <span class="sch-form-error address-error">country error</span>
+
+                  </div>
+                </div> 
+                    <div class="school-reason-box">
+                      <label for="proposed-class">Reason for leaving present school:<span class="star">*</span></label><br>
+                      <textarea name="" id="" class="input-long-width" ></textarea>
+                      <br>
+                      <span class="sch-form-error comment-error">comment   error</span>
+
+                    </div>
+                    <div class="school-phone-box">
+                      <label for="phone-number">Phone number:<span class="star">*</span></label><br>
+                      <input type="text" name="" id="phone-number" placeholder="#######" class="input-long-width">
+                      <br>
+                      <span class="sch-form-error phone-error">phone   error</span>
+
+                    </div>
+                    <div class="school-phone-box">
+                      <label for="sch-email">Email Address:<span class="star">*</span></label><br>
+                      <input type="email" name="" id="sch-email" placeholder="the sch email address" class="input-long-width">
+                      <br>
+                      <span class="sch-form-error email-error">email  error</span>
+
+                    </div>
+
+                  </div>
+                  <div class="last-entry-detail">
+                    <h1>Entry Detail:</h1>
+                    
+                    <div class="entry-info">
+                      <div class="info">
+                        I request that the name of our above named student be registered as a prospective student. I understand that the term and condition of the school undergo reasonable changes from time to time, as circumstances require, and will comply in all our dealings with the school.
+                      </div>
+
+                    </div>
+                    <div class="contact-first-lastname-box">
+                      <label for="term">Contact Person's First/Last name:<span class="star">*</span></label>
+                      <div class="names-inputs flex-inputs">
+                        <div class="contact-fName f-lName">
+                          <input type="text" name="" id="fName" placeholder="First" class="contact-f-l-name fname"><br>
+                          <span class="sch-form-error fName-error">name   error</span>
+    
+                        </div>
+                        <div class="contact-lName f-lName">
+                          <input type="text" name="" id="lName" placeholder="Last" class="contact-f-l-name lname"><br>
+                          <span class="sch-form-error fName-error">name   error</span>
+    
+                        </div>
+                      </div>
+                      <div class="contact-relationship-two-box">
+                        
+                          <label for="relationship-two">Relationship:<span class="star">*</span></label><br>
+                          <input type="text" id="relationship-two" class="input-long-width"><br>
+                          <span class="sch-form-error relationship-error">relationship error</span>
+                          
+                      
+                      </div>
+                      <div class="contact-signature">
+                        <label for="contact-signature-pad">Contact Person's Signature:<span class="star">*</span>
+                        </label>
+                        <div id="sign-button">
+                          <button onclick="clearCanvas()">clear</button>
+                          
+                        </div>
+                        <canvas id="contact-signature-pad" style="border: 1px solid #ccc; width: 100%; height: 120px;"></canvas>
+                       
+                      </div>
+                      <div class="contact-date">
+                        <label for="date">Date:<span class="star">*</span>
+                        </label><br>
+                        <input type="date" name="" id="" class="input-long-width">
+                       
+                      </div>
+                      <div class="documents-wrap">
+                        <label class="docu-text">
+                          This application should be submitted with the following documents <span class="star">*</span>
+                        </label><br>
+                        <div class="documents-list flex-inputs">
+
+                          <div class="birth-cert-wrap input-short-width all-documents">
+                            <input type="checkbox" name="" id="birth-cert">
+                            <label for="birth-cert">Photocopy of student's birth certificate</label>
+                          </div>
+                          <div class="std-passport-wrap input-short-width all-documents">
+                            <input type="checkbox" name="" id="passport">
+                            <label for="passport">2 passport sized photograph(with name of student written behind )</label>
+                          </div>
+                          <div class="report-wrap input-short-width all-documents">
+                            <input type="checkbox" name="" id="report">
+                            <label for="report">Last report from student's previous school school(transfer student only)</label>
+                          </div>
+                          <div class="nin-wrap input-short-width all-documents">
+                            <input type="checkbox" name="" id="nin">
+                            <label for="nin">NIN Slip</label>
+                          </div>
+
+                        </div>
+                        <div class="file-upload">
+                          <label for="">File/Image upload <br>
+                            <span>This application should be admitted with the documents mentioned above:</span>
+                          </label><br>
+                          <input type="file" name="" id="" class="last-upload-img upload-img">
+                        </div>
+                      </div>
+
+                    </div>
+                  
+                  
+
+                  </div>
+                  <div class="official-box-wrap">
+                    <h3>For Official Use Only:</h3>
+                    <div class="official-box">
+                      <div class="Referral-box">
+                        <label for="referral">Referral:</label><br>
+                        <input type="text" class="input-long-width">
+                      </div>
+                      <div class="Registration-box">
+                        <label for="registration">Registration Date:</label><br>
+                        <input type="text" id="registration" class="input-long-width">
+                      </div>
+                      <div class="interview-box">
+                        <label for="Interview">Interview:</label><br>
+                        <input type="text" id="Interview" class="input-long-width">
+                      </div>
+                      <div class="Admission-box">
+                        <label for="admission">Admission Status:</label><br>
+                        <input type="text" id="admission" class="input-long-width">
+                      </div>
+                      <div class="placement-box">
+                        <label for="placement">Placement of Child into Year:</label><br>
+                        <input type="text" id="placement" class="input-long-width">
+                      </div>
+                      <div class="Principal-signature">
+                        <label for="referral">Principal's Signature:</label><br>
+                        <canvas style="border: 1px solid #ccc;width: 100%; height: 80px;"></canvas>
+                      </div>
+                      <div class="date-box">
+                        <label for="official-date">Date:</label><br>
+                        <input type="date" id="placement"class="input-long-width">
+                      </div>
+                      <div class="verification-box">
+                        <label for="verification">Verification: <span class="star">*</span></label><br>
+                        <div class="g-recaptcha" data-sitekey="6LfneB8qAAAAAEPbDDaO4BmpYILeGQh2bL584AOX"></div><br>
+                        <!--secret key 6LfneB8qAAAAADXwGBypDkkpSbYrJDZaxikPMV_l -->
+                        <!-- <input type="submit" id="submit"> -->
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="enrol-btn-submit">submit form --</button>
+            </form>
+          
+          </section>
+        </div>
+      </main>
+   
+    </div>
+    <section class="enrol-contact-page">
+      <div class="enrol-overlay"></div>
+      <div class="enrol-infos">
+        <div class="contact-details">
+          <p>Connect your child potentials</p>
+          <h2>See what we can do to brighten him/her</h2>
+          <p>up we love connecting students to their </p>
+          <p>brighter future. Connect with us on our</p>
+          <p>social media.Follow us,tweet at us,tag us</p>
+          <p><span>-------</span> We want to hear from you <span>--------</span></p>
+        </div>
+        <div class="contact-us-with contact-icons">
+          <p>Connect with us:</p>
+          <a href="#">
+            <img src="./images/facebook.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/instagram.png" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/whatsapp.png" alt="">
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="footer-1st-house">
+        <div class="footer-logo">
+          <a href="#" class="logo">
+            <div class="empty-box"></div>
+            <div class="logo-word"><span class="s">S</span><span class="t">T</span><span class="e">E</span>P</div>
+            
+          </a>
+          <p id="footer-p">Visit us today to find out more about our admission process. We are commited to providing a safe and cring environment that is faith base to learners</p>
+
+        </div>
+        <div class="footer-list">
+          <p class="foot-heading">Quick Links</p>
+          <ul>
+            
+              <li><a href="#home-page" >home</a></li>
+              <li><a href="#programs">programs</a></li>
+              <li><a href="#about-section">about</a></li>
+              <li><a href="#contact">contact</a></li>
+              <li>
+                <a href="#facilities">facilities</a>
+             </li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact ">
+          <p class="foot-heading">Contact-Us</p>
+          <ul>
+            <li>
+              <img src="./images/address.png" alt="">
+              
+                5,myPlace Estate, street, city, Lagos.
+            </li>
+            <li>
+              <img src="./images/email.png" alt="">
+              
+               someemailhere.com
+            </li>
+            <li>
+              <img src="./images/phone.png" alt="">
+              +234-222-444-111
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+     
+      <div class="footer-final " style="padding: 1rem 10px;">
+        &copy;                2024Success-Train-College . All rights reserved
+        <p>...Designed and developed by <a href="#">FINIDI</a></p>
+      </div>
+     
+  </section>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script src="./script.js" async defer></script>
+</body>
+</html>
